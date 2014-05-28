@@ -1,0 +1,17 @@
+﻿<div data-options="dxView : { name: 'line' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " >
+    	<div class="app_navi">
+        	<div class="title">公交线路</div>
+            <div class="left"><span class="icon" data-bind="event: { dxclick: goBack }"><</span></div>
+            <div class="right"></div>
+        </div>
+        <div style="clear:both;"></div>
+        <div data-bind="dxList: { noDataText: '', dataSource: datasource, itemClickAction: itemClickAction, height: '90%' }">
+            <div data-options="dxTemplate: { name: 'item' }">
+                <span data-bind="text: lineName"></span>
+            </div> 
+        </div>
+        
+        <div data-bind="dxLoadPanel: { message: '请稍候 ...', visible: loadPanel.visible }"></div>
+    </div>
+</div>
