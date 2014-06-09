@@ -1,0 +1,23 @@
+.app_navi {
+	width:100%;
+	height:44px;
+	line-height:44px;
+	background:#1392c5;
+	text-align:center;
+}
+
+.app_navi .title {
+	position:absolute;
+	color:white;
+	font-size:20px;
+	width:100%;
+	text-align:center;
+}
+
+.app_navi .left {
+	float:left;
+}
+
+.app_navi .right {
+	float:right;
+}

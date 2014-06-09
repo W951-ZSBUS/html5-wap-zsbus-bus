@@ -1,0 +1,23 @@
+﻿<div data-options="dxView : { name: 'station' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " >
+    	<div class="app_navi">
+        	<div class="title"><span data-bind="text:title"></span></div>
+            <div class="left"><span class="icon" data-bind="event: { dxclick: goBack }"><</span></div>
+            <div class="right"></div>
+        </div>
+        <div style="clear:both;"></div>
+        <div data-bind="dxTileView: {
+        	noDataText: '',
+        	dataSource: datasource,
+  			itemMargin: 10,
+            baseItemHeight: 200,
+            baseItemWidth: 20,
+            listHeight: 250,
+            activeStateEnabled: false,
+            showScrollbar: false}">
+        		<div data-options="dxTemplate:{name:'item'}">
+                	<div data-bind="text: stationName"></div>
+                </div>
+        </div>
+    </div>
+</div>
